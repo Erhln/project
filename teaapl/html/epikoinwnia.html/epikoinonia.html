@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .contact-info {
+      margin: 10px;
+      width: 300px;
+      float: left;
+    }
+
+    .contact-section {
+      margin-bottom: 20px;
+    }
+
+    .contact-icon {
+      color: #555;
+      margin-right: 10px;
+    }
+
+    .contact-details {
+      margin-bottom: 5px;
+    }
+
+    .contact-form {
+      margin: 10px;
+      width: 300px;
+      float: left;
+    }
+
+    .person {
+      display: flex;
+      align-items: center;
+    }
+
+    .info-box {
+      background-color: #ffffff;
+      padding: 5px 10px;
+      border: 1px solid #fffbfb;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .message-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .message-input {
+      height: 100px;
+      width: 100%;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contact-info">
+    <div class="contact-section">
+      <h4>ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</h4>
+      <p>ΤΑΜΕΙΟ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΑΣΦΑΛΙΣΗΣ ΑΣΤΥΝΟΜΙΚΩΝ – ΠΥΡΟΣΒΕΣΤΩΝ – ΛΙΜΕΝΙΚΩΝ</p>
+    </div>
+    <div class="contact-section">
+      <h4><i class="fa fa-map-marker contact-icon" aria-hidden="true"></i> Διεύθυνση</h4>
+      <p class="contact-details">Βερανζέρου 30 (4ος όροφος) Αθήνα 10432</p>
+    </div>
+    <div class="contact-section">
+      <h4><i class="fa fa-phone contact-icon" aria-hidden="true"></i> Τηλέφωνα</h4>
+      <p class="contact-details">210 5202638</p>
+      <h4>Fax</h4>
+      <p class="contact-details">210 5203270</p>
+    </div>
+    <div class="contact-section">
+      <h4><i class="fa fa-envelope contact-icon" aria-hidden="true"></i> Email</h4>
+      <p class="contact-details">info@teaapl.gr</p>
+    </div>
+    <div class="contact-section">
+      <h4><i class="fa fa-facebook contact-icon" aria-hidden="true"></i> Facebook</h4>
+      <a href="https://www.facebook.com/groups/teaetdea/" target="_blank" class="pdf-link"></a>
+    </div>
+  </div>
+  <form action="your-server-side-script.php" method="POST">
+    <label for="name">Όνομα(*)<br></label>
+    <input type="text" id="name" name="name" required>
+  </form>
+  <form action="your-server-side-script.php" method="POST">
+    <label for="name">E-mail(*)<br></label>
+    <input type="text" id="name" name="name" required>
+  </form>
+</body>
+<form action="your-server-side-script.php" method="POST">
+  <label for="name"> Θέμα(*) <br></label>
+  <input type="text" id="name" name="name" required>
+</form>
+<form action="your-server-side-script.php" method="POST">
+  <div class="message-section">
+    <label for="message">Μήνυμα(*)</label>
+    <textarea id="message" name="message" class="message-input" required></textarea>
+  </div>
+  <button type="submit">Αποστολή</button>
+</form>
+
+</body>
+
+</html>
